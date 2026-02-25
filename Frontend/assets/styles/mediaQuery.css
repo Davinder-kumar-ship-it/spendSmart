@@ -1,0 +1,47 @@
+:root
+{
+    --primaryBackgroundColor:#f1feff;
+    --leftPrimaryBackgroundColor:rgb(248, 252, 255);
+}
+@media (width>1200px)
+{
+    body{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .mainContent
+    {
+        width:1200px;
+        /* border:1px red solid; */
+    }
+}
+@media(width<1200px)
+{
+    #dateBox{
+        background-color: pink;
+        width:6em;
+        font-size:100%;
+    }
+    #title
+    {
+        font-size:1rem;
+    }
+}
+@media (width<600px)
+{
+    #leftNavigation
+    {
+        
+    }
+    #leftNavigationContainer
+    {
+    
+    }
+    #spendBox
+    {
+        height:1.5rem;
+        width:5rem;
+    }
+}
+
