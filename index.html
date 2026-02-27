@@ -13,11 +13,7 @@
       <div class="heading" id="leftNavigation">
         <div id="leftNavigationContainer">
           <div id="spendBox">
-            <img
-              id="spendImage"
-              src="/Frontend/assets/img/spendIcon.png"
-              alt=""
-            />
+            <img id="spendImage" src="/Frontend/assets/img/spendIcon.png" alt=""/>
           </div>
           SpendSmart
         </div>
@@ -26,16 +22,13 @@
         <div class="rightElementBox">
           <div class="rightNavigationElement" id="title">Dashboard</div>
           <div class="rightNavigationElement" id="notification">
-            <img
-              id="notificationImage"
-              src="/Frontend/assets/img/bellIcon.png"
-              alt=""
-            />
+            <img id="notificationImage" src="/Frontend/assets/img/bellIcon.png" alt=""/>
           </div>
           <div class="rightNavigationElement" id="dateBox">Feb 2026</div>
         </div>
       </div>
     </header>
+
     <main class="mainContent mainContentHeight">
       <section class="dropDownBoxForDate">
         <li class="month">Jan 2026</li>
@@ -51,128 +44,124 @@
         <li class="month">Nov 2026</li>
         <li class="month">Dec 2026</li>
       </section>
-      
-      <section class="section-1" id="leftSection">
-        <div class="leftSectionElement" id="dashboardElement">
-          <div class="imageContainer">
-             <img class="image" src="/Frontend/assets/img/dashboard.png" alt="" />
-          </div>
-            Dashboard
-          </div>
-          <div class="leftSectionElement" id="reportsElement">
-            <div class="imageContainer">
-              <img class="image" src="/Frontend/assets/img/reports.png" alt="" />
-            </div>Reports
-          </div>
-          <div class="leftSectionElement" id="transactionElement">
-             <div class="imageContainer">
-               <img class="image" src="/Frontend/assets/img/transaction.png" alt="" />
-            </div>Transactions
-          </div>
-          <div class="leftSectionElement" id="budgetsElement">
-            <div class="imageContainer">
-              <img class="image" src="/Frontend/assets/img/budgets.png" alt="" />
-            </div>Budgets
-          </div>
-           <div id="emptyElement">
-        
-          </div>
 
-          <div class="leftSectionElement" id="settingsElement">
-            <div class="imageContainer">
-              <img class="image" src="/Frontend/assets/img/settings.png" alt="" />
+      <section class="section-1" id="leftSection">
+        <div class="leftSectionElement active" id="dashboardElement">
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/dashboard.png" alt="" />
+          </div>
+          Dashboard
+        </div>
+        <div class="leftSectionElement"   id="reportsElement">
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/reports.png" alt="" />
+          </div>Reports
+        </div>
+        <div class="leftSectionElement" id="transactionElement">
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/transaction.png" alt="" />
+          </div>Transactions
+        </div>
+        <div class="leftSectionElement" id="budgetsElement">
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/budgets.png" alt="" />
+          </div>Budgets
+        </div>
+        <div id="emptyElement"></div>
+        <div class="leftSectionElement" id="settingsElement">
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/settings.png" alt="" />
           </div>Settings
         </div>
         <div class="leftSectionElement" id="profileElement">
-           <div class="imageContainer">
-             <img class="image" src="/Frontend/assets/img/profile.png" alt="" />
+          <div class="imageContainer">
+            <img class="image" src="/Frontend/assets/img/profile.png" alt="" />
           </div>Profile
         </div>
       </section>
-      <section class="section-1" id="rightSection">      
-        
-          <article class="rightSectionElement" id="noTransaction">
-              <img src="/Frontend/assets/img/haveNothing.png" alt="" id="haveNothingImage">
-              <div class="text">No expenses yet ! 
-                    <p class="textSize">It looks like your wallet is taking a break           </p>
-                    <p class="textSize">add your first expense to start tracking</p>
-                    <div class="textSize" id="addMoneyBox1">Add Money</div>
+
+      <section class="section-1" id="rightSection">
+        <article class="rightSectionElement" id="noTransaction">
+          <img src="/Frontend/assets/img/haveNothing.png" alt="" id="haveNothingImage">
+          <div class="text">No expenses yet !
+            <p class="textSize">It looks like your wallet is taking a break</p>
+            <p class="textSize">Add your first expense to start tracking</p>
+            <div class="textSize" id="addMoneyBox1">+ Add Money</div>
+          </div>
+        </article>
+
+        <article class="rightSectionElement" id="dashBoard">
+          
+          <div class="dashboardItem" id="moneyDashboard">
+            <div class="moneyDashboardItem" id="leftMoneyDashboard">
+              <ul class="item" id="messageOfTotalMoney">Total Balance</ul>
+              <div class="item" id="totalMoney">$ <p id="totalMoneyValue">0.00</p>
+                <div id="trendAnalysisBox">
+                  <img id="trendImage" src="/Frontend/assets/img/trendIcon.png" alt="">+0.0%
+                </div>
               </div>
-          </article>
-          <article class="rightSectionElement" id="dashBoard">
-            <div></div>
-            <div class="dashboardItem" id="moneyDashboard">
-                  <div class="moneyDashboardItem" id="leftMoneyDashboard">
-                      <ul class="item" id="messageOfTotalMoney">Total Money</ul>
-                      <div class="item" id="totalMoney">$0,000.00 
-                        <div id="trendAnalysisBox"><img id="trendImage" src="/Frontend/assets/img/trendIcon.png" alt="">+0.0%</div>
-                      </div>
-                      <ul class="item" id="messageOfSpend">Avialble for spending this month</ul>
-                  </div>
-                  <div class="moneyDashboardItem" id="rightMoneyDashboard">
-                    <div class="rightMoneyDashboardItem" id="analyticalBox">
-                      <img class="imageAnalytical" src="/Frontend/assets/img/reports.png" alt=""> analytics
-                    </div>
-                    <div class="rightMoneyDashboardItem" id="addMoneyBox">
-                            +Add Money
-                    </div>
-                    <div class="rightMoneyDashboardItem" id="emptyBox"></div>
-                  </div>            
+              <ul class="item" id="messageOfSpend">Available for spending this month</ul>
             </div>
-            <div class="dashboardItem" id="watchAllTransaction">
-              Recent Transactions
-              <p id="viewAllTransaction" style="color:green">View All</p>
+            <div class="moneyDashboardItem" id="rightMoneyDashboard">
+              <div class="rightMoneyDashboardItem" id="analyticalBox">
+                <img class="imageAnalytical" src="/Frontend/assets/img/reports.png" alt=""> Analytics
+              </div>
+              <div class="rightMoneyDashboardItem" id="addMoneyBox">
+                + Add Money
+              </div>
+              <div class="rightMoneyDashboardItem" id="emptyBox"></div>
             </div>
-            
-            <div class="dashboardItem" id="transactionHistory">
-              
-              <div class="transactionHistoryBox" >
-                <div class="transactionHistoryItem" id="transactionImage">
-                  <img class="image" src="/Frontend/assets/img/profile.png" alt="">
-                </div>
-                <div class="transactionHistoryItem" id="messageOfSpending">
-                  <p class="spendingMessage">whole market</p>
-                  <p class="date">Today, 5:43 AM</p>
-                </div>
-                <div class="transactionHistoryItem" id="spendRs">44</div>
-              </div>            
+          </div>
+          <div class="dashboardItem" id="watchAllTransaction">
+            Recent Transactions
+            <p id="viewAllTransaction">View All</p>
+          </div>
+          <div class="dashboardItem" id="transactionHistory">
+            <div class="transactionHistoryBox">
+              <div class="transactionHistoryItem" id="transactionImage">
+                <img class="image" src="/Frontend/assets/img/profile.png" alt="">
+              </div>
+              <div class="transactionHistoryItem" id="messageOfSpending">
+                <p class="spendingMessage">Whole Market</p>
+                <p class="date">Today, 5:43 AM</p>
+              </div>
+              <div class="transactionHistoryItem" id="spendRs" style="color:#e53e3e; font-weight:600;">-$44</div>
             </div>
-          </article>
-          <article class="rightSectionElement" id="addExpensiveBox">+</article>
+          </div>
+        </article>
+
+        <article class="rightSectionElement" id="addExpensiveBox">+</article>
       </section>
-    
+
+      <!-- Add Expense Modal -->
       <section class="section-1" id="transactionAdder">
         <article class="transactionItem" id="newExpensiveBox">
-            <p id="messageNewExpensive">New Expense</p>  
-            <p id="deleteOption">x</p>
+          <p id="messageNewExpensive">New Expense</p>
+          <p id="deleteOption">✕</p>
         </article>
         <article class="transactionItem" id="amountMessage">
           <div>Amount</div>
         </article>
         <article class="transactionItem" id="totalSpendingBox">
-            <div class="transactionItemList" id="currencySymbol">$</div>
-            <div class="transactionItemList" id="totalRs">0</div>
-            <div class="transactionItemList" id="manupulaterSymbol">
-                <img class="image" id="increaseRs" src="/Frontend/assets/img/increase.png" alt="">
-                <img class="image" id="decreaseRs" src="/Frontend/assets/img/decrease.png" alt="">
-            </div>
+          <div class="transactionItemList" id="currencySymbol">$</div>
+          <div class="transactionItemList" id="totalRs">0</div>
+          <div class="transactionItemList" id="manupulaterSymbol">
+            <img class="image" id="increaseRs" src="/Frontend/assets/img/increase.png" alt="">
+            <img class="image" id="decreaseRs" src="/Frontend/assets/img/decrease.png" alt="">
+          </div>
         </article>
         <article class="transactionItem" id="spendingMessage">
-            <input id="inputMessage" type="text" placeholder="Expensive Name">
+          <input id="inputMessage" type="text" placeholder="Expense Name">
         </article>
         <article class="transactionItem" id="categoriesBox">
           <p class="categoryName" id="category">Category</p>
-           <div class="categoryName" id="utilities">
-            <div></div>
+          <div class="categoryName" id="utilities">
             <img src="/Frontend/assets/img/utilites.png" alt="" class="image">
-            Utilites
-            <div></div>
+            Utilities
           </div>
           <div class="categoryName" id="food">
-            <div></div>
             <img src="/Frontend/assets/img/food.png" alt="" class="image">
             Food
-            <div></div>
           </div>
         </article>
         <article class="transactionItem" id="date">
@@ -180,14 +169,28 @@
           <input type="datetime-local" id="dateValue">
         </article>
         <article class="transactionItem" id="submitBtnsBox">
-            <div class="btn" id="deleteOption">Cancel</div>
-            <div class="btn" id="acceptedBtn">
-              Add expense
-            </div>
+          <div class="btn" id="cancelBtn">Cancel</div>
+          <div class="btn" id="acceptedBtn">Add Expense</div>
         </article>
-       
       </section>
 
+      <!-- Add Money Modal -->
+      <section id="addMoneyAdder">
+        <div id="addMoneyTitle">
+          Add Money
+          <span id="addMoneyDeleteOption">x</span>
+        </div>
+        <div id="addMoneyAmountBox">
+          <div id="addMoneyCurrencySymbol">$</div>
+          <input type="number" id="addMoneyInput" placeholder="0.00">
+        </div>
+        <p id="addMoneyNoteLabel">Note (optional)</p>
+        <input type="text" id="addMoneyNoteInput" placeholder="e.g. Salary, Freelance...">
+        <div id="addMoneySubmitBox">
+          <div id="addMoneyCancelBtn">Cancel</div>
+          <div id="addMoneyAcceptBtn">Add Money</div>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="/Frontend/src/javascript.js"></script>
